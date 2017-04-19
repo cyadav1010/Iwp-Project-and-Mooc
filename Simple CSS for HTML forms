@@ -1,4 +1,3 @@
-/*Simple CSS for HTML forms.*/
 <form class="pure-form pure-form-aligned">
     <fieldset>
         <div class="pure-control-group">
