@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Function Calculator</title>
+<script type="text/javascript">
+   function show_cal(){
+    function num(){
+    a=Number(document.form1.num1.value);  
+    b=Number(document.form1.num2.value); 
+    c=a+b;
+    document.form1.result1.value=c;
+
+    a=Number(document.form1.num1.value);  
+    b=Number(document.form1.num2.value); 
+    c=a-b;
+    document.form1.result2.value=c;
+
+    a=Number(document.form1.num1.value);  
+    b=Number(document.form1.num2.value); 
+    c=a*b;
+    document.form1.result3.value=c;
+
+    a=Number(document.form1.num1.value);  
+    b=Number(document.form1.num2.value); 
+    c=a/b;
+    document.form1.result4.value=c;
+    }
+
+    function addition(){
+    a=Number(document.form1.num3.value);  
+    b=Number(document.form1.num4.value); 
+    c=a+b;
+    document.form1.result1.value=c;
+    }
+
+    function subtraction(){
+    a=Number(document.form1.num5.value);  
+    b=Number(document.form1.num6.value); 
+    c=a-b;
+    document.form1.result2.value=c;
+    }
+
+    function multiply(){
+    a=Number(document.form1.num7.value);  
+    b=Number(document.form1.num8.value); 
+    c=a*b;
+    document.form1.result3.value=c;
+    }
+
+    function division(){
+    a=Number(document.form1.num9.value);  
+    b=Number(document.form1.num10.value); 
+    c=a/b;
+    document.form1.result4.value=c;
+    }
+
+    /*function formValidator(){
+    var number = document.getElementById('number');
+        if(isNumeric(number, "Only Numbers pls")){
+        return true;
+        }return false;
+    }
+
+    function notEmpty(elem, helperMsg){ //gia keno
+        if(elem.value.length == 0){
+            alert(helperMsg);
+            elem.focus(); // set the focus to this input
+        return false;
+        }
+    return true;
+    }
+
+    function show_clear(){
+        document.form1.display.value=null;
+        num1= null;
+        num2 = null;
+        lastaction= null;
+        action = null;
+    } */
+}
+
+</script>
+</head>
+
+<body>
+<table width="400" align="center" bgcolor="#C0C0C0">
+    <form name="form1" action="">
+
+    <tr align="center">
+    <td width="600" height="112" align="center" border="1">
+        <h1 align="center"> Calculator </h1>
+    Number 1: <input name="num1" type="text" size=10/>
+    Number 2: <input name="num2" type="text" size=10/>
+        </td>
+    </tr>
+
+    <tr align="center">
+    <td width="500">
+    <input name="num3" type="text" size=10/> + 
+    <input name="num4" type="text" size=10/> =
+    <input name="result1" type="text" size=10/>
+    </td>
+    </tr>
+
+    <br/>
+    <tr align="center">
+    <td width="500">
+    <input name="num5" type="text" size=10/> -
+    <input name="num6" type="text" size=10/> =
+    <input name="result2" type="text" size=10/>
+    </td>
+    </tr>
+
+    <br/>
+    <tr align="center">
+    <td width="500">
+    <input name="num7" type="text" size=10/> *
+    <input name="num8" type="text" size=10/> =
+    <input name="result3" type="text" size=10/>
+    </td>
+    </tr>
+
+    <br/>
+    <tr align="center">
+    <td width="500">
+    <input name="num9" type="text" size=10/> /
+    <input name="num10" type="text"size=10/> =
+    <input name="result4" type="text" size=10/>
+    </td>
+    </tr>
+
+
+        <br/>
+    <td height="13"></tr>
+    <tr align="center" width="100">
+    <td>
+    <input name="result" type="button" onClick="show_cal()" value="Result" />
+    <input type="button" onClick="show_clear()" value="Clear"/>
+    </td>
+    </tr>
+
+</form>
+</table>
+</body>
+</html>
